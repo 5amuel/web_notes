@@ -8,6 +8,8 @@ import { AcUnitOutlined } from '@material-ui/icons'
 import { KeyboardArrowRight } from '@material-ui/icons/';
 import { makeStyles } from '@material-ui/styles'
 
+
+
 const useStyles = makeStyles({
   btn: {
     fontSize: 60,
@@ -16,12 +18,11 @@ const useStyles = makeStyles({
       backgroundColor: "blue"
     }
   },
+
   title: {
     textDecoration: "underline",
     marginBottom: 20
   }
-    
-  
 })
 
 
@@ -41,9 +42,9 @@ const classes = useStyles()
         Creae a New Note
       </Typography>
       <Button 
-        className={classes.btn}
+        // className={classes.btn}
         type="submit" 
-        color="primary" 
+        color="secondary" 
         variant="contained"
         // startIcon={<Send />}
         endIcon={<KeyboardArrowRight />}
