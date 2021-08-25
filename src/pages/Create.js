@@ -1,9 +1,11 @@
 import React from 'react'
 import { Typography } from '@material-ui/core'
 import { Button } from '@material-ui/core'
-import { ButtonGroup } from '@material-ui/core'
+// import { ButtonGroup } from '@material-ui/core'
 import { Container } from '@material-ui/core'
-
+import { AcUnitOutlined } from '@material-ui/icons'
+import { Send } from '@material-ui/icons'
+import { KeyboardArrowRight } from '@material-ui/icons/';
 export default function Create() {
   return (
     <Container>
@@ -19,16 +21,12 @@ export default function Create() {
         type="submit" 
         color="primary" 
         variant="contained"
+        // startIcon={<Send />}
+        endIcon={<KeyboardArrowRight />}
         onClick={() => console.log('clicked')}
-      
       >Submit</Button>
-      {/* <Button type="submit" color="secondary" variant="contained">Submit</Button>
-
-      <ButtonGroup color="secondary" variant="outlined">
-        <Button>One</Button>
-        <Button>Two</Button>
-        <Button>Three</Button>
-      </ButtonGroup> */}
+      <br />
+      <AcUnitOutlined color="secondary" fontSize="small"/>
     </Container>
   )
 }
